@@ -1,0 +1,5 @@
+html,
+body {
+    background-image: url(../../assets/images/BACK_IMAGE.jpg);
+    background-size: cover;
+}
