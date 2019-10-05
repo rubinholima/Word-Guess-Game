@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess Game</title>
 
-    <!-- style.css -->
-
+    <!-- reset file and style.css   -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Javascript file game.js -->
+    <script src="./assets/javascript/game.js"></script>
 
     <!-- Bootstrap CSS -->
 
@@ -23,11 +26,70 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    
-    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Word Guess Game<h1>
+                    <p class="lead">Let's having fun! Guess your word and Win!!</p>
+        </div>
+    </div>
+
+    <div id="startGame">
+        <h2>Guess a Word</h2>
+        <p>Press Any Key to Start</p><br><br><br>
+        <small>Note: Some words may contain a hyphen(-)</small>
+
+    </div>
+
+    <div id="mainGame" style="display: none">
+
+        <p id="question"></p><br><br>
+
+    </div>
+
+    <div id="RRguess" style="display: block">
+
+        <p id="rightGuess"></p>
+        <p id="wrongGuess"></p>
+        <p id="guessesLeft"></p>
+
+
+    </div>
+
+    <div id="youLose" style="display: none">
+
+        <h1>You Lose</h1>
+
+        <div class="plAgain">
+            <button onclick="restart()">Play again?</button>
+        </div>
+
+        <br>
+
+        <p id="correctWordWas"></p>
+
+    </div>
+
+    <div id="youWin" style="display: none">
+
+        <h1>Congratulations - You Win!</h1>
+
+        <div class="plAgain">
+            <button onclick="restart()">Play again?</button>
+        </div>
+
+        <br>
+
+        <p id="correctWordIs"></p>
+
+    </div>
+
+
+
+
 </body>
 
 </html>

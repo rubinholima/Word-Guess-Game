@@ -1,5 +1,47 @@
 html,
 body {
-    background-image: url(../../assets/images/BACK_IMAGE.jpg);
+    background-image: url(../../assets/images/classic2.png);
     background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+#startGame, #RRguess, #question{
+    text-align: center;
+    color: red;
+   
+}
+
+#question {
+    font-size: 34px;
+    margin-top: -94px;
+
+
+}
+
+#rightGuess {
+    font-weight: bold;
+    font-size: 34px;
+
+}
+
+#correctWordWas {
+    font-size: 25px;
+    text-align: center;
+}
+
+#correctWordIs {
+    font-size: 25px;
+    text-align: center;
+}
+
+#youWin.h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.plAgain {
+    text-align: center;
 }
